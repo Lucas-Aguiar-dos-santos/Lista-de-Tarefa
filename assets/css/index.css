@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3B3C44;
+    padding: 2%;
+}
+
+.wrapper{
+    width: 100%;
+    max-width: 800px;
+    min-height: 200px;
+    background-color: #24252A;
+    border-radius: 25px;
+    border: 2px solid #00DBFF;
+    padding: 20px;
+}
+
+.wrapper h2{
+    text-align: center;
+    margin-bottom: 15px;
+    color: white;
+}
+
+form{
+    width: 100%;
+    height: 35px;
+    text-align: center;
+}
+
+form .input-box{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+form .input-box input[type=text]{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 25px;
+    border: 0;
+    border: 2px solid #00DBFF;
+    padding: 0 100px 0 10px;
+    outline: none;
+    font-size: 18px;
+}
+form .input-box button{
+    width: 100px;
+    height: 100%;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    position: absolute;
+    border-radius: 25px;
+    background-color: #00DBFF;
+    border: 0;
+    transition: .3s;
+    cursor: pointer;
+}
+
+form .input-box button i{
+    font-size: 20px;
+    transition: .3s ease-in-out;
+    transform: rotateZ(0);
+}
+form .input-box button:hover{
+    background-color: #017183;
+}
+form .input-box button:hover i{
+    transition: .3s ease-in-out;
+    color: white; 
+    transform: rotateZ(-0.15turn);
+}
+
+.card-list{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.card{
+    width: 100%;
+    height: 40px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.card .w50 label{
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.card .w50 button{
+    width: 20px;
+    margin-right: 15px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.card .w50 button i{
+    font-size: 20px;
+    margin-right: 15px;
+    transition: .3s ease;
+}
+
+.card .w50 .edit i:hover{
+    color:  #00DBFF;
+}
+
+.card .w50 .trash i:hover{
+    color:  red;
+}
+
+.modal{
+    background-color: rgba(0, 0, 0, 0.507);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.box-edit{
+    width: 100%;
+    max-width: 600px;
+    min-width: 200px;
+    height: auto;
+    min-height: 200px;
+    background-color: rgb(49, 49, 49);
+    display: block;
+    position: absolute;
+    border: 2px solid #00DBFF;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-animation: scale-in-center 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation: scale-in-center 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.box-edit .btn-exit{
+    width: 100%;
+    height: 35px;
+    text-align: end;
+}
+
+.box-edit .btn-exit button{
+    width: 35px;
+    height: 100%;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    transition: .3s;
+    color: white;
+}
+
+.box-edit .btn-exit button:hover{
+    background-color: #818181;
+    color: black;
+}
+
+.box-edit form{
+    width: 100%;
+    padding:  0 40px;
+}
+
+.box-edit form input{
+    width: 100%;
+    height: 35px;
+    border-radius: 25px;
+    border: 2px solid #00DBFF;
+    margin: 15px 0;
+    outline: none;
+    padding: 0 15px;
+}
+
+.box-edit form .w100{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.modal .box-edit .w50{
+    width: 50%;
+    padding: 10px;
+}
+
+
+.modal .box-edit .w50 button{
+    width: 100%;
+    height: 35px;
+    border-radius: 25px;
+    background-color: #00DBFF;
+    border: 0;
+    font-size: 18px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.modal .box-edit .w50 button:hover{
+    background-color: #017183;
+    color: white;
+}

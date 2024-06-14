@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/index.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Lista de tarefas</title>
+</head>
+<body>
+    
+
+    <main class="wrapper">
+        <h2>Lista de tarefas</h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="text" id="inputTarefa" placeholder="Digite sua tarefa">
+                    <button type="button" onclick="AddTarefa()" class="btn-enviar"><i class='bx bxs-send'></i></button>
+                </div>
+            </form>
+        <div class="card-list" id="card-list">
+
+           <!--<div class="card">
+                <div class="w50">
+                    <input type="checkbox" id="checkbox">
+                    <label for="checkbox">Tarefa a fazer</label>
+                </div>
+                <div class="w50">
+                    <button class="edit" ><i class='bx bxs-edit'></i></button>
+                    <button class="trash"><i class='bx bxs-trash'></i></button>
+                </div>
+            </div>-->
+            
+        </div>
+       <!--<div class="modal" id="modal">
+            <div class="box-edit" id="box-edit">
+                <div class="btn-exit">;
+                    <button type="button">X</button>
+                </div>
+                <form action="#">
+                    <input type="text" id="newEdit" placeholder="Digite sua Tarefa">
+                    <div class="w100">
+                        <div class="w50">
+                            <button type="button">Cancelar</button>
+                        </div>
+                        <div class="w50">
+                            <button type="button">Confirmar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>--> 
+
+    </main>
+
+
+    
+
+    <script src="./assets/js/index.js"></script>
+    
+</body>
+</html>
